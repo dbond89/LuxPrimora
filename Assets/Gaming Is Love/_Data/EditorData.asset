@@ -22,14 +22,14 @@ MonoBehaviour:
   scrollY: 0
   foldoutLimit: 
   helpDrag: 220
-  subSectionDrag: 250
-  tabListDrag: 250
+  subSectionDrag: 150
+  tabListDrag: 200
   formulaDrag: 250
   schematicDrag: 400
-  jumpListDrag: 250
+  jumpListDrag: 50
   dataSelectionSorting: 0
   typeDataSelectionSorting: 0
-  createBackup: 1
+  createBackup: 0
   updateSchematics: 1
   schematicUpdateFolder: 
   updatePrefabs: 0
