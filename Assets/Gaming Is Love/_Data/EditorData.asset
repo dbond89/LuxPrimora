@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 619879560, guid: bfb06eec059d3a345ac43927a4389437, type: 3}
   m_Name: EditorData
   m_EditorClassIdentifier: 
-  lastProject: {fileID: 0}
+  lastProject: {fileID: 11400000, guid: e2d68f19807465f40a1ca36027b4d5f1, type: 2}
   lastSaveFormat: 0
   lastEncrypted: 0
   editorHelpLanguageTexts: {fileID: 0}
   section: 0
   subSection: 0
-  tabIndex: 0
+  tabIndex: -1
   scrollY: 0
   foldoutLimit: 
   helpDrag: 220
