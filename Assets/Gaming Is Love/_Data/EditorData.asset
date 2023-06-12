@@ -26,7 +26,7 @@ MonoBehaviour:
   tabListDrag: 200
   formulaDrag: 250
   schematicDrag: 400
-  jumpListDrag: 255
+  jumpListDrag: 50
   dataSelectionSorting: 0
   typeDataSelectionSorting: 0
   createBackup: 0
