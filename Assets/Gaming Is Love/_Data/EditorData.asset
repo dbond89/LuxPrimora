@@ -24,7 +24,7 @@ MonoBehaviour:
   helpDrag: 220
   subSectionDrag: 150
   tabListDrag: 200
-  formulaDrag: 250
+  formulaDrag: 432
   schematicDrag: 400
   jumpListDrag: 50
   dataSelectionSorting: 0
@@ -51,4 +51,6 @@ MonoBehaviour:
   variablesPrefab: []
   foldoutKeys: []
   foldoutStates: []
-  popupFavorites: []
+  popupFavorites:
+  - GamingIsLove.Makinom.Formulas.Nodes.BaseFormulaNode:StatusValueNode
+  - GamingIsLove.Makinom.Formulas.Nodes.BaseFormulaNode:ValueNode
