@@ -1,4 +1,201 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.17.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New:
+- UI Input Filters: Filter input content displayed in a UI box by defined conditions. Input filters are added to the UI box.
+- UI Boxes: Controls: 'Input Filter Settings' available. Define input keys to navigate and use UI input filters.
+- UI System: Unity UI: Default UI Prefabs: 'Dropdown Input Prefab' setting available. Defines the input prefab used for dropdown inputs.
+- Content Layouts: 'Highlight Input' settings available. Optionally add a highlight color to all inputs that use a content layout.
+- Save Game Settings: Load Game Menu: 'Separate Auto Save Slots' settings available. Optionally separate normal and auto save slots by using tabs.
+- Input Options: Custom Dropdown: 'Custom Dropdown' option type available. Displays a dropdown menu with defined list of options. Uses int variables/PlayerPrefs to store the selected option's index.
+- Input Options: 'Keep Value' setting available when using 'Live Update'. Optionally keep the changed value for an input option even when canceling or closing (without accepting changes) the options dialogue.
+- Schematics: Text File Exists: 'Text File Exists' node available in 'Value > Text File' nodes. Checks if a text file exists.
+- Schematics: Delete Text File: 'Delete Text File' node available in 'Value > Text File' nodes. Deletes a defined text file.
+- Schematics: Store Variables: 'Encrypt Data' setting available. Optionally encrypt the XML-formatted text using the save game encryption.
+- Schematics: Load Variables: 'Decrypt Data' setting available. Optionally decrypt the XML-formatted text using the save game encryption.
+- Schematics: Save Game Exists: 'Any' save game type available. Checks if any save game or auto save game file exists.
+- Text Files: File Type: 'Variable' file type available for text file handling. Saves the data into a global string variable using the file name as variable key. This is e.g. used by 'Store Variables' and 'Load Variables' nodes to save/load variable data into a text file.
+- General Conditions: Has Tagged Machine: 'Has Tagged Machine' condition type available. Checks if a game object has a tagged machine with defined tags.
+- Component Conditions: Has Tagged Machine: 'Has Tagged Machine' condition type available. Checks if the component's game object has a tagged machine with defined tags.
+- HUD Conditions: Has Tagged Machine: 'Has Tagged Machine' condition type available. Checks if the HUD's user has a tagged machine with defined tags.
+- Unity UI: UI Tooltip (TextMesh Pro) Component: 'UI Tooltip (TextMesh Pro)' component available. Automatically displays tooltips when hovering over words that where added using global text codes (name, short name, icon or the tooltip text codes). Please note that this only works for content that is directly referenced by the project.
+- Unity UI: UI Input Filter Component: 'UI Input Filter' component available. Add this component to an input component of a type matching the filter you're using (usually a 'UI Toggle Input' component to enable/disable a filter, except for 'Text Search' filter that uses a text input field).
+- Unity UI: UI Box Input Filters Component: 'UI Box Input Filters' component available. This component manages multiple 'UI Input Filter' components added to it and it's child objects. Add the component to a UI box prefab to allow filtering inputs displayed by the UI box.
+- Unity UI: UI Box Multi Input Filters Component: 'UI Box Multi Input Filters' component avaialble. This component manages multiple 'UI Box Input Filters' components. Use it to create more complex filter combinations. Add the component to a UI box prefab.
+- Unity UI: UI Box Component: Input Settings: 'Dropdown Input Prefab' setting available. Defines the input prefab used for dropdown inputs, overriding the default input prefabs.
+- Unity UI: UI Cursor Over Schematics Component: 'UI Cursor Over Schematics' component available. Optionally start schemtics when the cursor enters or leaves a UI element. E.g. can be used for cursor-over scale changes.
+- Unity UI: HUD Selected Data Content Provider Component: 'HUD Selected Data (Content Provider)' component available. Uses the first content stored in a defined selected data as HUD user/content.
+- Unity UI: HUD Forward Content Provider Component: 'HUD Forward Content Provider' component available. Uses another content provider's content as content. E.g. useful if you set up HUD elements as a prefab using a forward content provider at their root, adding the prefab to another HUD just requires to set the content provider of the forward content provider.
+- Unity UI: Input Components: 'Audio Settings' available. Optionally override the UI box's or default audio clip settings for individual inputs.
+- Unity UI: Context Menu: 'UI Box > Input Filter' context menu entries available. Use the new context menu entries to create toggle filter inputs (for prefab or added to a UI box) and add 'UI Box Input Filters' and 'UI Box Multi Input Filters' to UI boxes.
+- Unity UI: Context Menu: 'Dropdown Input' menu entry available in 'UI Box > Input (Value)' context menu. Creates a dropdown input used for a prefab or as a placed input on a UI box.
+- Text Editor: 'Add Tooltip' button available in 'More > Data' for data types that are directly referenced by the project. Adds tooltip information to the text that can be displayed by 'UI Tooltip (TextMesh Pro)' components. The tooltip text code is not displayed in texts.
+
+Changes:
+- Schematics: Store Variables: The 'Store Variables' node has been renamed to 'Save Variables'.
+
+Fixes:
+- Input Keys: Input Key: Fixed an issue where 'Input Key' input origins could lead to axis values not being used.
+- UI Boxes: Fixed an issue where opening and closing a UI box in the same frame could lead to it still registering as open, not opening it again later.
+- Auto Machines: Notify Start: Object Variable Change: Fixed an issue where using 'Object ID' or 'Game Object' didn't show the correct settings.
+- Editor: Schematics: Fixed an issue where 'New Schematic' didn't create a new schematic when a schematic was already opened.
+- Editor: Fixed a potential issue where initially saving a new project could lead to some data assets having no data in some Unity versions. This only appeared when not creating a backup during saving.
+- Node Editor: Fixed an issue where copying a node from a node group and pasting it in a schematic without that node group caused an error. Pasting nodes will no longer use the node group of the copied node.
+- Node Editor: Fixed an issue where removing a gate didn't remove connects to it.
+- Unity UI: HUD Click Component, UI Button Input: Fixed an issue where using 'HUD Click' components on button inputs ('UI Button Input' component) where not recognizing clicks.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.16.1
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Fixes:
+- Scene Object Components: Cursor: Fixed an issue where mouse cursor changes where not undone if the game object is destroyed while the cursor is over it.
+- Editor: Variable Conditions: Fixed an issue that could cause data changes being recognized when using 'Template' variable conditions although no data was changed.
+- Schematics: Save Game Exists: Fixed an issue where checking 'Retry' didn't work.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.16.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New:
+- Unity 6: Makinom 2 now supports Unity 6.
+- Movement Components: Nav Mesh Agent: 'Use Root Motion' settings available. Optionally use an 'Animator' component's root motion for position changes instead of the NavMesh agent.
+- Save Games: Auto Save Slots: 'Use Delete Key' setting available in auto save slot selections. Optionally allow deleting existing auto save slots in the auto save slot selection.
+- Schematics: Unity Console: 'Add Schematic Name' setting available. Optionally add the name of the schematic at the start of the console output. By default enabled, adding the name.
+
+Changes:
+- Schematics, Machine Components: Resource Overrides: Overriding prefabs will now use the pooling settings defined in the schematic. Previously pooling was ignored when the prefab was replaced by an override.
+
+Fixes:
+- Formulas: Selected Data: Fixed an issue where formula didn't create their own local selected data unless they where forwarded local data from their call (e.g. a schematic).
+- Text Codes: Fixed an issue where text codes for sub-data where not used.
+- Save Games: Auto Save Slots: Fixed an issue where auto save slot selection could use the wrong slot.
+- Spawn Points: Fixed an issue that could result in wrong spawn positions when using a 2D collider to define a spawn area.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.15.4
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New:
+- HUDs: Tooltip: Tooltip Checks: Custom: 'Custom' tooltip type check available. Checks if a tooltip is a custom tooltip, either allowing all custom tooltips or from defined custom tooltip keys.
+- Unity UI: UI Custom Tooltip Components: 'UI Custom Tooltip' components available. Adds a custom tooltip to a part of your UI with a defined content (e.g. name, description and icon). Custom tooltips can use a 'Custom Tooltip Key' to use separate tooltip HUDs to display them.
+
+Changes:
+- Unity UI: UI Box Components: Having both 'Horizontal Input Change' and 'Vertical Input Change' set to 0 to use Unity's direction based input selection will now force using vertical input change 1 when the UI box is disabled (e.g. when using a hidden target menu in ORK Framework 3). Directional input based on UI positions was otherwise not working correctly due to the disabled state of UI game objects.
+
+Fixes:
+- UI Boxes: Typewriter: Fixed an issue where the 'Typewriter Finished Object' wasn't enabled when the typewriter effect finished on it's own.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.15.3
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New:
+- Schematics: Store NavMesh Path: 'Store NavMesh Path' node available in 'Movement > NavMesh' nodes. Stores the current path (corners) of a NavMesh agent into a Vector 3 variable list.
+- Schematics: Change Line Renderer Positions: 'Change Line Renderer Positions' node available in 'Game Object > Renderer' nodes. Sets the positions of a 'Line Renderer' component using a Vector 3 variable list.
+- Schematics: Show Dialogue: Notification: 'Max Display Count' setting available when using 'Queue' notification mode. Defines how many notification can be displayed at the same time before being queued.
+
+Changes:
+- Tagged Machine Components: A tagged machine will now be registered when it's component is enabled (and unregistered when disabled), greatly improving performance for the 'Search Tagged Machines' node and other tagged machine nodes accessing all in the scene. You can access all registered tagged machines via scripting using 'TaggedMachineComponent.Available'.
+
+Fixes:
+- Schematics: Change Rotation: Fixed an issue where using intpolation could result in different rotation directions based on the current rotation of the game object.
+- Schematics: Value Option Dialogue: Custom: Fixed an issue where using custom 'Int' values used float variables/PlayerPrefs instead of int.
+- Editor: Filters: Fixed an issue where using filters didn't change the list on first use.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.15.2
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New:
+- UI Box Selections: 'UI Layout' settings available for most 'UI Box' selection settings. Optionally use a UI layout for the displayed UI box.
+- Variable Lists: 'Lowest' and 'Highest' list origins available. Getting a variable from a variable list now allows getting the lowest/highest value (int/float), the value with shortest/longest distance to 0-vector (Vector3) or the shortest/longest text (string).
+- Scripting: Reflection: Parameters and fields are now extensible settings. Extend from 'BaseParameterType' and 'BaseSchematicParameterType' to add new value types.
+
+Fixes:
+- Mouse/Touch Controls: Fixed an issue where using 'Start' mode recognized the mouse as pressed without releasing it.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.15.1
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New:
+- Schematics: Change Position: 'Use Stop Time' settings available when using 'Move' and 'Move By Speed'. Optionally define a maximum time the movement can take before automatically stopping.
+- Schematics: Load Scene: 'Destroy After Run' setting available when not using 'Spawn Machine Object'. Destroying the machine object after the schematic finished (after a scene load) is now optional.
+- Unity UI: UI Int/Float Button Input Component: 'Inverse Horizontal Input' and 'Inverse Vertical Input' settings available. Optionally inverse the value changes coming from horizontal or vertical input, e.g. having left increase and right decrease the value.
+
+Changes:
+- Plugins: 'Use GUI Tick' setting has been removed. GUI tick functionality is no longer supported by plugins. Implement it via a custom component if you need it.
+
+Fixes:
+- Content Information: Fixed an issue where referencing a content itself via text codes (e.g. adding the name of an input key to the description of the same input key) would cause issues in editor popups and in-game.
+- Schematics: Show Dialogue: Choice: Fixed an issue where using 'Store Selection' to remember the selected input index didn't work.
+- Schematics: Change Rotation: Fixed an issue where rotating over time with interpolation and locked axes could result in wrong rotations.
+- Unity UI: UI Boxes, Ok/Cancel Buttons: Fixed an issue where the state of ok/cancel buttons wasn't updated on changes.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.15.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New:
+- Game States: 'Active State Schematics' and 'Inactive State Schematics' settings available. Optionally execute schematics when a game state is set active or inactive.
+- UI Boxes: 'Block Focus Cursor Over' setting available. Optionally block the 'Focus Cursor Over' setting (defined in general settings for UI boxes) for the UI box. The UI box will not be focused automatically when the cursor is over it.
+- Schematics: Read Text File, Read Text File Lines: 'Decrypt Data' setting available. Optionally decrypt the text using the save game encryption.
+- Schematics: Write Text File, Write Text File Lines: 'Encrypt Data' setting available. Optionally encrypt the text using the save game encryption.
+- Auto Machines: Notify Start: 'Game State Change' type available. Start the machine when defined game state changed to a defined state.
+- Unity UI: Schematics: Spawn UI Prefab: 'Spawn UI Prefab' node available in 'UI > UI Components' nodes. Spawns a prefab on a selected UI layer's canvas.
+
+Changes:
+- HUDs: Navigation Bar: Navigation Points: HUD elements on navigation points can now access object variables and similar things in case the point represents a game object (e.g. 'Interactin' or 'Marker' nav points).
+
+Fixes:
+- Editor, Play Mode, UI: Fixed an issue where having the editor open while entering play mode could cause issues with the UI not being displayed. This only occured when using 'Domain Reload' in the Unity editor settings.
+- Editor, Play Mode: Fixed an issue where using 'Accept Timeout' wasn't reset when stopping play mode and not using domain reload.
+- Save Games: Fixed an issue where checking if continue is available could report false at the start of a game, even when a save game to continue was available.
+- HUDs: Navigation Bar: Fixed an issue where position-based navigation markers could lead to an additional marker in their scene due to not cleaning out the previous scene's marker.
+- Animations: Mecanim: Fixed an issue where animation durations where reported wrong when using a different animation speed.
+- Selected Data: Fixed an issue where getting a single component from selected data was only returned when it was attached to a game object stored in selected data, not if the component itself was stored.
+- Schematics: Fixed an issue where overriding a schematic's prefabs or audio clips on play could cause an error if the schematic doesn't have any defined prefabs/audio clips.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Makinom 2.14.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+New:
+- Data Loading: Performance improvement when loading data (editor and in-game). Especially noticeable when opening large projects with hundreds or thousands of data assets in the Makinom editor.
+- Editor: Loading/reloading data, checking for changes and saving now displays information screens instead of the settings. The editor is locked in any case, the new screens will inform you that an operation is in progress. Previously, larger projects had locked editors for some time without letting you know what's going on.
+- Editor: Variable Fields: Improved performance of the variable popup fields.
+- Game Controls: Interactions: Move To Interaction: 'Update Position' settings available. Optionally update the position the player moves to during movement. E.g. use this if your interactions are moving to let the player run after them.
+- Game Settings: Performance Settings: 'Auto Data Init' setting available. Initializing the settings of data assets directly referenced by the project (e.g. input keys, music or HUDs) is now optional. Not loading the settings on project initialization will boost the initial project load time and loads the settings as needed (i.e. when they're first accessed). By default disabled, i.e. not loading settings on project init (change to previous behaviour).
+- Asset Sources: Asset Bundle: Asset bundles now support using sub assets. E.g. using sprites from a sprite sheet is now possible.
+- Math Functions: 'Root Of Value' and 'Root By Value' functions available. Finds the nth root of the value (e.g. x^1/3) or uses the value as root of a defined  (e.g. 3^1/x).
+- Float Operators: 'Root' float operator available. The nth (value) root of the current value (i.e. current value ^ 1/value).
+- HUDs: Conditional Schematics: 'Auto Stop' settings available for 'Valid Schematic' and 'Invalid Schematic' settings. Optionally stop a running valid/invalid schematic when the condition changed (i.e. stopping valid schematic when becoming invalid or stopping invalid schematic when becomming valid).
+- Schematics: Stop Machine: 'Stop Machine' node available in 'Machine' nodes. Stops running machines/schematics that use a defined schematic asset and machine object.
+- Untiy UI: HUD Click Component: Schematic: The HUD's user/content is now available as local selected data via the data key 'action'.
+- Inspector: Makinom Object: Listed running machins/schematics can now be stopped via a button.
+- Scripting: HUDs: The 'HUDInstance' class now has functions to access the HUDs displaying content. They're returned as 'IUIBase' interface instances, which are in most cases 'IHUD' interfaces (e.g. the 'HUD' component when using 'Unity UI' module), but can also be 'IUIBox' interfaces (e.g. 'Console' HUD in ORK Framework).
+
+Changes:
+- Project Initialization: The directly referenced data assets no longer automatically load their settings on project initialization (in-game). This improves initial load time and loads the settings as needed. To restore the previous behaviour (i.e. loading the settings on project init), use the new 'Auto Data Init' setting in 'Game > Game Settings' in the 'Performance Settings'.
+- Unity UI Components: HUD Click, HUD Button Control Content, HUD Axis Control Content, HUD Joystick Control Content: Using clickable HUD content as part of a UI box's inputs will now forward click-selection to the parent input.
+
+Fixes:
+- Schematics: Start Machine: Fixed an issue where the 'Resource Overrides' settings where not used.
+- Schematics: Show Dialogue: Fixed an issue where descriptions of 'Choice' dialogues didn't use the correct variable origin or replace actor text codes.
+- Unity UI: UI Selection Cursor Component: Fixed an issue where enabling 'Show Only Focused' didn't hide the cursor of an unfocused UI box when first showing it or updating the displayed content.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 Makinom 2.13.0
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 

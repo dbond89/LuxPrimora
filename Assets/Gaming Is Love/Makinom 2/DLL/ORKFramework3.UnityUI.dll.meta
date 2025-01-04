@@ -31,3 +31,10 @@ PluginImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 209685
+  packageName: 'RPG Editor: ORK Framework 3'
+  packageVersion: 3.19.0
+  assetPath: Assets/Gaming Is Love/Makinom 2/DLL/ORKFramework3.UnityUI.dll
+  uploadId: 702674
