@@ -17,10 +17,10 @@ MonoBehaviour:
   lastEncrypted: 0
   editorHelpLanguageTexts: {fileID: 0}
   section: 3
-  subSection: 1
-  tabIndex: -1
+  subSection: 5
+  tabIndex: 6
   scrollY: 0
-  foldoutLimit: Exit Game Question
+  foldoutLimit: 
   helpDrag: 220
   subSectionDrag: 252
   tabListDrag: 252
