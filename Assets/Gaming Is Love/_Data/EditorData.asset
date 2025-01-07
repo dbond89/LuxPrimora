@@ -22,7 +22,7 @@ MonoBehaviour:
   scrollY: 0
   foldoutLimit: Exit Game Question
   helpDrag: 220
-  subSectionDrag: 150
+  subSectionDrag: 252
   tabListDrag: 252
   formulaDrag: 432
   schematicDrag: 400
@@ -36,6 +36,8 @@ MonoBehaviour:
   updateScenes: 0
   sceneUpdate: 
   schematicAsset:
+  - {fileID: 11400000, guid: 39ff02a28958d864eb1b895eec71fc82, type: 2}
+  - {fileID: 11400000, guid: cd52eb31560e2e240883334af7f5ebb6, type: 2}
   - {fileID: 11400000, guid: fe9102298439ec741bd7aac882e54714, type: 2}
   dialogueImportSettings:
     name: 
@@ -46,7 +48,8 @@ MonoBehaviour:
     encrypted: 0
   variablesDefined: []
   variablesEditor: []
-  variablesSchematic: []
+  variablesSchematic:
+  - ui
   variablesScene: []
   variablesPrefab: []
   foldoutKeys: []
