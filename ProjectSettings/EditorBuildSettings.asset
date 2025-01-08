@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PT-GreatLibrary.unity
     guid: 75dfea9d52d951349b1e2d4118d5d356
+  - enabled: 1
+    path: Assets/Scenes/BattleArena.unity
+    guid: 684906feb344b7745ba85eb2eb103f1f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
