@@ -20,7 +20,7 @@ MonoBehaviour:
       assets:
       - {fileID: 11400000, guid: 0f0bb95129178204e9587f585d70f195, type: 2}
       - {fileID: 11400000, guid: f6f5fbcf9006aa142b080d387c30d278, type: 2}
-      - {fileID: 11400000, guid: 6370678386b6f1a4fa819563ae669fa0, type: 2}
+      - {fileID: 0}
       - {fileID: 11400000, guid: 6370678386b6f1a4fa819563ae669fa0, type: 2}
       - {fileID: 11400000, guid: 6370678386b6f1a4fa819563ae669fa0, type: 2}
     encrypted: 0
