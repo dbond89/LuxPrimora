@@ -16,10 +16,10 @@ MonoBehaviour:
   lastSaveFormat: 0
   lastEncrypted: 0
   editorHelpLanguageTexts: {fileID: 0}
-  section: 2
-  subSection: 6
-  tabIndex: 0
-  scrollY: 0
+  section: 9
+  subSection: 0
+  tabIndex: -1
+  scrollY: 58
   foldoutLimit: 
   helpDrag: 220
   subSectionDrag: 252
@@ -37,9 +37,11 @@ MonoBehaviour:
   sceneUpdate: 
   schematicAsset:
   - {fileID: 11400000, guid: dfc0619bd69c6fa488e0ceb41314f650, type: 2}
+  - {fileID: 11400000, guid: fe9102298439ec741bd7aac882e54714, type: 2}
+  - {fileID: 11400000, guid: 80bd2f6437dadd74fa4444e505f153e1, type: 2}
+  - {fileID: 11400000, guid: 7d4a4ddd16bc68a41820ce818efde73b, type: 2}
   - {fileID: 11400000, guid: 39ff02a28958d864eb1b895eec71fc82, type: 2}
   - {fileID: 11400000, guid: cd52eb31560e2e240883334af7f5ebb6, type: 2}
-  - {fileID: 11400000, guid: fe9102298439ec741bd7aac882e54714, type: 2}
   dialogueImportSettings:
     name: 
     byteData: 
@@ -51,6 +53,7 @@ MonoBehaviour:
   variablesEditor: []
   variablesSchematic:
   - ui
+  - BattleArena
   variablesScene: []
   variablesPrefab: []
   foldoutKeys: []
@@ -62,3 +65,9 @@ MonoBehaviour:
   - GamingIsLove.ORKFramework.AI.Nodes.BaseAINode:ChanceNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:StoreMusicNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeMusicNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:StoreSceneNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:LoadSceneNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:WaitNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ShowDialogueNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeCameraPositionNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeGameStateNode
