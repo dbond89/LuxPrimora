@@ -28,7 +28,7 @@ MonoBehaviour:
   schematicDrag: 400
   jumpListDrag: 241
   dataSelectionSorting: 0
-  typeDataSelectionSorting: 0
+  typeDataSelectionSorting: 2
   createBackup: 0
   updateSchematics: 1
   schematicUpdateFolder: 
