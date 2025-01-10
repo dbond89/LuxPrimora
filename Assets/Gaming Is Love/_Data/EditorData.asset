@@ -76,3 +76,5 @@ MonoBehaviour:
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:UnityConsoleNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:CheckCombatantNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:EquipmentForkNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:AddClassNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeClassNode
