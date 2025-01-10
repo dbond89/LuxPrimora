@@ -19,7 +19,7 @@ MonoBehaviour:
   section: 6
   subSection: 6
   tabIndex: 15
-  scrollY: 3705
+  scrollY: 1888
   foldoutLimit: 
   helpDrag: 220
   subSectionDrag: 252
@@ -36,6 +36,7 @@ MonoBehaviour:
   updateScenes: 0
   sceneUpdate: 
   schematicAsset:
+  - {fileID: 11400000, guid: 84d827d5986461347a4ebba96b8d8060, type: 2}
   - {fileID: 11400000, guid: fe9102298439ec741bd7aac882e54714, type: 2}
   - {fileID: 11400000, guid: 473a75e819ddac246adfae9425218b55, type: 2}
   - {fileID: 11400000, guid: dfc0619bd69c6fa488e0ceb41314f650, type: 2}
@@ -72,3 +73,5 @@ MonoBehaviour:
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ShowDialogueNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeCameraPositionNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeGameStateNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:UnityConsoleNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:CheckCombatantNode
