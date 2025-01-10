@@ -16,10 +16,10 @@ MonoBehaviour:
   lastSaveFormat: 0
   lastEncrypted: 0
   editorHelpLanguageTexts: {fileID: 0}
-  section: 6
-  subSection: 6
-  tabIndex: 15
-  scrollY: 1888
+  section: 9
+  subSection: 0
+  tabIndex: -1
+  scrollY: 0
   foldoutLimit: 
   helpDrag: 220
   subSectionDrag: 252
@@ -75,3 +75,4 @@ MonoBehaviour:
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeGameStateNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:UnityConsoleNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:CheckCombatantNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:EquipmentForkNode
