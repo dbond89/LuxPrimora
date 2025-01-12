@@ -25,7 +25,7 @@ MonoBehaviour:
   subSectionDrag: 252
   tabListDrag: 252
   formulaDrag: 432
-  schematicDrag: 390
+  schematicDrag: 340
   jumpListDrag: 241
   dataSelectionSorting: 0
   typeDataSelectionSorting: 2
@@ -36,6 +36,7 @@ MonoBehaviour:
   updateScenes: 0
   sceneUpdate: 
   schematicAsset:
+  - {fileID: 11400000, guid: 7a7ee4d0088aea84aad83979aa83abc1, type: 2}
   - {fileID: 11400000, guid: 65596110cf828574cb7173b45ca9c3c7, type: 2}
   - {fileID: 11400000, guid: 84d827d5986461347a4ebba96b8d8060, type: 2}
   - {fileID: 11400000, guid: fe9102298439ec741bd7aac882e54714, type: 2}
@@ -55,6 +56,7 @@ MonoBehaviour:
   variablesDefined: []
   variablesEditor:
   - earth
+  - fire
   - none
   - type
   variablesSchematic:
@@ -63,6 +65,7 @@ MonoBehaviour:
   - action
   - type
   - earth
+  - fire
   variablesScene: []
   variablesPrefab: []
   foldoutKeys: []
@@ -86,3 +89,4 @@ MonoBehaviour:
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:AddClassNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeClassNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:CheckStatusNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:CheckVariablesNode
