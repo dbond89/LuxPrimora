@@ -55,10 +55,12 @@ MonoBehaviour:
     encrypted: 0
   variablesDefined: []
   variablesEditor:
+  - air
   - earth
   - fire
   - none
   - type
+  - water
   variablesSchematic:
   - ui
   - BattleArena
