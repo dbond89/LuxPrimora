@@ -16,16 +16,16 @@ MonoBehaviour:
   lastSaveFormat: 0
   lastEncrypted: 0
   editorHelpLanguageTexts: {fileID: 0}
-  section: 7
-  subSection: 5
-  tabIndex: 3
-  scrollY: 960
+  section: 9
+  subSection: 0
+  tabIndex: -1
+  scrollY: 0
   foldoutLimit: 
   helpDrag: 220
   subSectionDrag: 252
   tabListDrag: 252
   formulaDrag: 432
-  schematicDrag: 306
+  schematicDrag: 390
   jumpListDrag: 241
   dataSelectionSorting: 0
   typeDataSelectionSorting: 2
@@ -36,6 +36,7 @@ MonoBehaviour:
   updateScenes: 0
   sceneUpdate: 
   schematicAsset:
+  - {fileID: 11400000, guid: 65596110cf828574cb7173b45ca9c3c7, type: 2}
   - {fileID: 11400000, guid: 84d827d5986461347a4ebba96b8d8060, type: 2}
   - {fileID: 11400000, guid: fe9102298439ec741bd7aac882e54714, type: 2}
   - {fileID: 11400000, guid: 473a75e819ddac246adfae9425218b55, type: 2}
@@ -52,10 +53,16 @@ MonoBehaviour:
       assets: []
     encrypted: 0
   variablesDefined: []
-  variablesEditor: []
+  variablesEditor:
+  - earth
+  - none
+  - type
   variablesSchematic:
   - ui
   - BattleArena
+  - action
+  - type
+  - earth
   variablesScene: []
   variablesPrefab: []
   foldoutKeys: []
@@ -78,3 +85,4 @@ MonoBehaviour:
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:EquipmentForkNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:AddClassNode
   - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:ChangeClassNode
+  - GamingIsLove.Makinom.Schematics.Nodes.BaseSchematicNode:CheckStatusNode
