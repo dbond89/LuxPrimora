@@ -69,6 +69,7 @@ MonoBehaviour:
   - earth
   - fire
   - water
+  - air
   variablesScene: []
   variablesPrefab: []
   foldoutKeys: []
